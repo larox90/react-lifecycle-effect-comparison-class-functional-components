@@ -41,7 +41,7 @@ class TitleClassComponent extends Component {
   render() {
     return (
       <div className="TitleClassComponent">
-        This a class component
+        This a class component { this.props.title }
       </div>
     );
   }

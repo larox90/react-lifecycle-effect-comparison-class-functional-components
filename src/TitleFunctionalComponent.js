@@ -27,7 +27,7 @@ function TitleFunctionalComponent(props) {
   }, [props.title]);
   return (
     <div className="TitleFunctionalComponent">
-      This a functional component
+      This a functional component { props.title }
     </div>
   );
 }
