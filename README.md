@@ -1,3 +1,10 @@
+# React Demo comparing class component life cycles and functional components effect hook
+## both types of components are able to handle this same hooks, but on different ways.
+The life cycles that I'm covering on this demo are the next:
+* _componentDidMount (for class) against useEffect(()=>{}, []) (for function)_: this life cycle hook let us be aware when a component is created and this will be triggered on this scenario.
+* _componentDidUpdate (for class) against useEffect(()=>{}, [title]) (for function)_: this life cycle hook will be triggered every time we have a prop or state update and the component needs to re render, on the function component we specify into the array what prop or state we need to be a trigger, on class components to avoid the re render we need to use this other method _shouldComponentUpdate_ described below.
+* _componentWillUnmount (for class) against useEffect(()=>{ return () => {} }, []) (for function)_: this life cycle hook will be triggered when the component will be destroyed.
+* _shouldComponentUpdate (for class) against useEffect(()=>{}, [title])_ this life cycle method we use to avoid the rerender into the class component.
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
